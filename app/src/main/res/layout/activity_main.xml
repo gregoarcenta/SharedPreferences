@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+   <EditText
+       android:id="@+id/colorTexto"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Color de texto"
+       android:layout_marginTop="10dp"
+       android:textSize="20sp"
+       android:inputType="textPersonName"/>
+   <EditText
+       android:id="@+id/tamañoLetra"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Tamaño de letra"
+       android:layout_marginTop="10dp"
+       android:textSize="20sp"
+       android:inputType="number"/>
+   <EditText
+       android:id="@+id/tipoLetra"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Tipo de letra"
+       android:layout_marginTop="10dp"
+       android:textSize="20sp"
+       android:inputType="textPersonName"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="20dp">
+      <Button
+          android:id="@+id/botonGuardar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Guardar"
+          android:textSize="20sp"/>
+      <Button
+          android:id="@+id/botonLeer"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Leer"
+          android:textSize="20sp"/>
+   </LinearLayout>
+   <LinearLayout
+       android:layout_marginTop="20sp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:paddingLeft="50dp"
+       android:paddingRight="50dp"
+       android:paddingTop="10dp">
+      <TextView
+          android:id="@+id/txtColor"
+          android:layout_marginTop="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:layout_gravity="center"/>
+      <TextView
+          android:id="@+id/txtTamaño"
+          android:layout_marginTop="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:layout_gravity="center"/>
+      <TextView
+          android:id="@+id/txtTipo"
+          android:layout_marginTop="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:layout_gravity="center"/>
+   </LinearLayout>
+
+</LinearLayout>
